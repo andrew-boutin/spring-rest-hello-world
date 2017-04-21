@@ -18,13 +18,13 @@ It exposes a very simple REST API endpoint and also has Swagger API documentatio
 
 Default greeting:
 
-[localhost:8080/greeting](localhost:8080/greeting)
+http://localhost:8080/greeting
 
 Named greeting:
 
-[localhost:8080/greeting?name=bob](localhost:8080/greeting?name=bob)
+http://localhost:8080/greeting?name=bob
 
 Swagger generated documentation:
 
-[localhost:8080/swagger-ui](localhost:8080/swagger-ui)
+http://localhost:8080/swagger-ui
 
