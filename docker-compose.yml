@@ -1,0 +1,12 @@
+version: '2'
+services:
+  api:
+    image: "frolvlad/alpine-oraclejdk8:slim"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./build/libs/hello-world-spring-boot-1.0.0.jar:/app.jar
+    environment:
+      - JAVA_OPTS=""
+    working_dir: /
+    command: /bin/sh -c "touch /app.jar && java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar"
